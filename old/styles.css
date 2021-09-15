@@ -1,0 +1,155 @@
+/*Colors used
+
+Text color (Dark Gray): #2b2b2b;
+Primary Color: #bb8588;
+Secondary Color: #BC8F8F;
+*/
+
+body {
+  font-family: "Sora", sans-serif;
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #d7dde8,
+    #757f9a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d7dde8,
+    #757f9a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background-image-about {
+  background-image: url("../img/ladakh.jpg");
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.background-image-contact {
+  background-image: url("../img/road.jpg");
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.background-image-index {
+  background-image: url("../img/prayerflags.jpg");
+  background-size: cover;
+  text-align: center;
+  background-position: top;
+  padding: 200px 0;
+}
+
+.background-image-work {
+  background-image: url("../img/valley.jpg");
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.profile__portrait {
+  float: left;
+  border-radius: 50%;
+  width: 250px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.main {
+  text-align: left;
+  margin-right: 40px;
+}
+
+.skills {
+  text-align: center;
+  margin-left: 30%;
+}
+
+.check {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+a {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  font-weight: bolder;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #489c70;
+}
+
+button {
+  color: whitesmoke;
+  font-family: inherit;
+  width: 25%;
+  background-color: #757f9a;
+  font-weight: bold;
+  font-size: 16px;
+  size: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#contact-form {
+  text-align: right;
+  margin-right: 40%;
+  font-weight: bold;
+}
+
+.submit {
+  font-weight: bold;
+}
+
+span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+}
