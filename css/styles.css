@@ -1,6 +1,6 @@
 :root {
   --color-primary: #2b2b2b;
-  --color-primary-lighter: #525252;
+  --color-primary-lighter: #313131;
   --color-secondary: #93b7be;
   --color-bg: #f6f2f0;
   --color-active: #be44bd;
@@ -39,8 +39,8 @@ body {
   float: left;
   border-radius: 50%;
   width: 250px;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 3%;
 }
 
 .page-header {
@@ -71,6 +71,7 @@ body {
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 .grid {
@@ -86,19 +87,15 @@ body {
 
 .leftAlign {
   text-align: left;
-  margin-right: 40px;
+  margin-right: 10%;
 }
 
-.skills {
+/* .skills {
   text-align: center;
   margin-left: 30%;
   min-width: 360px;
   max-width: 1200px;
-}
-
-.check {
-  text-decoration: underline;
-}
+} */
 
 .monastery {
   background-image: url("../img/monastery.jpg");
@@ -129,7 +126,7 @@ body {
 }
 
 .button {
-  text-align: center;
+  text-align: left;
   border: none;
   display: inline-block;
   text-decoration: none;
@@ -139,7 +136,6 @@ body {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
@@ -156,9 +152,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -176,6 +174,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -189,6 +188,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -255,27 +255,58 @@ a:active {
   color: var(--color-active);
 }
 
-#contact-form {
-  text-align: right;
-  margin-right: 40%;
-  font-weight: bold;
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.submit {
-  font-weight: bold;
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: var(--color-button);
+  color: var(--color-primary);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-span {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: var(--color-active);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* span {
   font-family: "IBM Plex Mono", monospace;
   font-size: 20px;
   background-color: lightgray;
+} */
+
+.footer {
+  clear: both;
+  display: block;
+  text-align: center;
 }
 
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.twitter {
+  width: 25px;
+  height: 25px;
 }
 
 #prayer_flags {

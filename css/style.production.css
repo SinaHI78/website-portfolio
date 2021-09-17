@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 a {
@@ -29,8 +29,8 @@ body {
   float: left;
   border-radius: 50%;
   width: 250px;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 3%;
 }
 
 .page-header {
@@ -67,6 +67,7 @@ body {
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 .grid {
@@ -84,19 +85,15 @@ body {
 
 .leftAlign {
   text-align: left;
-  margin-right: 40px;
+  margin-right: 10%;
 }
 
-.skills {
+/* .skills {
   text-align: center;
   margin-left: 30%;
   min-width: 360px;
   max-width: 1200px;
-}
-
-.check {
-  text-decoration: underline;
-}
+} */
 
 .monastery {
   background-image: url("../img/monastery.jpg");
@@ -127,7 +124,7 @@ body {
 }
 
 .button {
-  text-align: center;
+  text-align: left;
   border: none;
   display: inline-block;
   text-decoration: none;
@@ -138,9 +135,9 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -156,9 +153,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -168,9 +167,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -190,6 +191,7 @@ button:focus,
     -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
@@ -201,6 +203,7 @@ button:focus,
     -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
@@ -217,6 +220,7 @@ button:focus,
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
@@ -228,6 +232,7 @@ button:focus,
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
@@ -285,7 +290,7 @@ a {
 }
 
 a:visited {
-  color: #525252;
+  color: #313131;
   font-weight: bolder;
 }
 
@@ -298,32 +303,59 @@ a:active {
   color: #be44bd;
 }
 
-#contact-form {
-  text-align: right;
-  margin-right: 40%;
-  font-weight: bold;
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.submit {
-  font-weight: bold;
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #d0cdd7;
+  color: #2b2b2b;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-span {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #be44bd;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* span {
   font-family: "IBM Plex Mono", monospace;
   font-size: 20px;
   background-color: lightgray;
+} */
+
+.footer {
+  clear: both;
+  display: block;
+  text-align: center;
 }
 
-.page-footer {
-  clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
+.twitter {
+  width: 25px;
+  height: 25px;
 }
 
 #prayer_flags {
