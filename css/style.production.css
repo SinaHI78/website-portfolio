@@ -84,16 +84,9 @@ body {
 }
 
 .leftAlign {
-  text-align: left;
-  margin-right: 10%;
-}
-
-/* .skills {
   text-align: center;
-  margin-left: 30%;
-  min-width: 360px;
-  max-width: 1200px;
-} */
+  margin: 5%;
+}
 
 .monastery {
   background-image: url("../img/monastery.jpg");
@@ -309,6 +302,8 @@ input[type="text"],
 select,
 textarea {
   width: 50%; /* Full width */
+  display: block;
+  margin: 0 auto;
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -340,12 +335,6 @@ input[type="submit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-/* span {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 20px;
-  background-color: lightgray;
-} */
 
 .footer {
   clear: both;
