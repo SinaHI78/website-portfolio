@@ -301,7 +301,7 @@ input[type="text"],
 [type="email"],
 select,
 textarea {
-  width: 50%; /* Full width */
+  width: 50%;
   display: block;
   margin: 0 auto;
   padding: 12px; /* Some padding */
@@ -342,7 +342,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.twitter {
+.facebook {
   width: 25px;
   height: 25px;
 }
